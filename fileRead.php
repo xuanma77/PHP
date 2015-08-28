@@ -1,5 +1,10 @@
 <?php 
 //首先采用“fopen”函数打开文件，得到返回值的就是资源类型。
+
+    //$file=fopen("f.txt","r");   //打开文件
+    //$con=mysql_connect("localhost","root","root");  //连接数据库
+    //$img=imagecreate(100,100);//图形画布
+
 $file_handle = fopen("/data/webroot/resource/php/f.txt","r");
 if ($file_handle){
     //接着采用while循环（后面语言结构语句中的循环结构会详细介绍）一行行地读取文件，然后输出每行的文字
